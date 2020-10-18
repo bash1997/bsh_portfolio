@@ -190,7 +190,7 @@ header {
 }
 
 a#logo-name{
-  width: calc(100% - 64px);
+  width: calc(100% - 80px);
 }
 
 a#logo-name img {
@@ -603,9 +603,9 @@ button:nth-of-type(2) {
 
   /*End FOOTER*/
   /*HERO-AREA*/
-    .hero-area {
+    /*.hero-area {
       height: calc(100vh - 153.625px);
-    }
+    }*/
   /*End HERO-AREA*/
   /*WORK*/
 

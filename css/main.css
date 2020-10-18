@@ -190,7 +190,7 @@ header {
 }
 
 a#logo-name{
-  width: calc(100% - 80px);
+  width: calc(100% - 75px);
 }
 
 a#logo-name img {
@@ -366,7 +366,8 @@ span#line1 {
   background: rgba(250, 153, 28, .5);
 } */
 
-#portfolio /*#work*/ h2 {
+#portfolio h2,
+#about h2 {
   text-shadow: 0 3px 3px #032539;
 }
 

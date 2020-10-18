@@ -1,0 +1,13 @@
+Title: Working Through "Navigating the Food Chain"
+Subtitle: Using Only JS ternary Operator
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * * 
+* * * * * * * 
+* * * * * * * * 
+* * * * * * * * * 
+* * * * * * * * * *

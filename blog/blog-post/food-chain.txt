@@ -1,0 +1,15 @@
+Title: Working Through "Navigating the Food Chain"
+Subtitle: Using Only JS ternary Operator
+
+	While working on Udacity's Javascript course, one of the quizzes we had to complete was "Navigating the Food Chain". We needed to take two variables, eatsPlants and eatsAnimals, and create a ternary statement that told the user whether the animal was an omnivore, carnivore, herbivore, or undefined. Normally, when given a problem like this, I would use else if statements, because that is the easiest and it allows more room to workthrough the code. However, ternary expressions are one line codes, so they are shorter but they are only if...else statements, which means that one side of the statement is TRUE and one side is FALSE, no in-between. 
+	I start is what I know: IF eatsPlants equals true AND eatsAnimals equals true THEN the animal is an omnivore BUT IF eatsPlants equals true AND eatsAnimals equals false THEN the animal is a herbivore, which translated into an ternary statement is:
+
+eatsPlants ? eatsAnimals ? "omnivore" : "herbivore"
+
+	Next, I need to work on the false side: IF eatsPlants equals false AND eatsAnimals equals true THEN the animal is a carnivore BUT IF eatsPlants equals false AND eatsAnimals equals false THEN the animal is undefined.
+
+eatsAnimals ? "carnivore" : "undefined"
+
+	In order to put these two statement together under one variable, catergory, I need to group each Animal condition in parentheses, so the computer knows what statement to focus on first.
+
+var category = eatsPlants ? (eatsAnimals ? "omnivore" : "herbivore") : (eatsAnimals ? "carnivore" : "undefined");

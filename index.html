@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>BSH | Home</title>
+  <link rel="icon" href="img/bsh-icon.png" type="image/icon type">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,81 +24,67 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <header id="header">
+    <a id="logo-name" href="http://www.bshwork.me/">
+      <img src="img\logo-name.png">
+    </a>
+      <button id="menu">
+        <ion-icon name="menu-sharp"></ion-icon>
+      </button>
+      <!--<div class="content-wrapper">-->
+        <nav id="navMenu">
+          <div class="list">
+            <a class="active" href="http://www.bshwork.me/">
+              Home
+            </a>
+            <a href="portfolio/index.html">
+              Portfolio
+            </a>
+            <a href="about/index.html">
+              About
+            </a>
+            <a class="hireMe" href="">
+              Hire Me!
+            </a>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-
-
-  <header>
-    <div class="content-wrapper">
-      <a href="http://www.bshwork.me/">
-        <h2 class="home">BSHWork</h2>
-      </a>
-
-      <div id="full-name">
-        <h1>Bria A. Saunders-Hall</h1>
-      </div>
-
-      <nav>
-      <ul id="fullwidth-nav">
-        <li>
-        <a href="">create|</a>
-      </li>
-      <li>
-        <a href="">work</a>
-      </li>
-      <li>
-        <a href="">|connect</a>
-      </li>
-      </ul>
-      <div class="mobile-menu">
-        <div id="myLinks">
-          <a href="#">BSHWork</a>
-          <a href="#">create</a>
-          <a href="#">work</a>
-          <a href="#">connect</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
+          </div>
       </nav>
-      <div class="header-divider">
-      </div>
-
-    </div>
+    <!--</div>-->
   </header>
 
-<main>
+<main id="main">
   <section class="hero-area">
-    <img src="" alt="bsh"/>
+    <h3>
+      <span id="static">
+        <span id="line1">Bria Saunders-Hall&nbsp;</span>
+        <span id="js-header"></span>
+      </span>
+    </h3>
   </section>
 
-  <section id="work">
+  <section id="hello">
     <div class="content-wrapper">
-    <h2>work</h2>
+    <h2>Hello!</h2>
 
     <div class="arrow">
-      <img scr="" alt="click for more"/>
+      <img scr="img/arrow.png" alt="click for more"/>
     </div>
 
-    <div class="work-gallery">
-      <img src="img/jubilee-thumbnail-1.png" alt="jubilee"/>
-    </div>
-    <div class="work-gallery">
-      <img src="img/jubilee-thumbnail-1.png" alt="image 2"/>
-    </div>
-    <div class="work-gallery">
-      <img src="img/jubilee-thumbnail-1.png" alt="image 2"/>
+  <!--  <div class="work-gallery">
+      <img src="img/jubilee-austen.png" alt="jubilee"/>
+    </div>-->
+    <div class="content-wrapper">
+      <div class="gallery">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus
+          vel facilisis.
+          </p>
+      </div>
+      <div class="content-wrapper">
+        <a href="" id="workButton" class="whiteButton">
+            See My Portfolio
+        </a>
+      </div>
     </div>
 
   </div>
@@ -110,59 +97,68 @@
     <div class="arrow">
       <img scr="" alt="click for more"/>
     </div>
+    <div class="content-wrapper">
+      <div class="profile content-wrapper">
+          <img class="profile-pic" src="img/briaa.jpg" alt="Bria A. Saunders-Hall">
+        </div>
 
-    <div class="profile">
-      <div class="profile-background">
-      </div>
-      <div class="profile-pic">
-        <img src="" alt="Bria Saunders-Hall">
+      <div id="contact" class="content-wrapper">
+
+        <address class="contact-info">
+          <h6>let's meet</h6>
+          <p>
+            Washington, DC<br/>
+            bash_1997@outlook.com<br/>
+            2403302969<br/>
+            <a href="bsh.pdf" class="orangeButton" download="">
+              Resume</a>
+          </p>
+        </address>
+
+      <div class="social">
+        <h6>social</h6>
+        <div class="social-icons">
+          <button class="icon">
+            <ion-icon name="logo-linkedin">
+              <a href="https://www.linkedin.com/in/bria-saunders-hall-0a3539109/" target="_blank">
+              </a>
+            </ion-icon>
+          </button>
+          <button class="icon">
+            <ion-icon name="logo-dribbble">
+              <a href="https://dribbble.com/bash1997" target="_blank">
+              </a>
+            </ion-icon>
+          </button>
+          <button class="icon">
+            <ion-icon name="logo-github">
+              <a href="https://www.instagram.com/_saundershall/" target="_blank">
+              </a>
+            </ion-icon>
+          </button>
+        </div>
       </div>
     </div>
-
-    <div id="contact" class="content-wrapper">
-
-      <address class="contact-info">
-      <h4>let's meet</h4>
-      <p>
-        Washington, DC<br/>
-        bash_1997@outlook.com<br/>
-        2403302969
-      </p>
-    </address>
-
-    <div class="social">
-      <h4>social</h4>
-      <div class="social-icons">
-        <p>
-          <a href="https://instagram.com" target="_blank">
-            <img src="" alt=""/>
-          </a>
-        </p>
-        <p>
-          <a href="https://instagram.com" target="_blank">
-            <img src="" alt=""/>
-          </a>
-        </p>
-        <p>
-          <a href="https://instagram.com" target="_blank">
-            <img src="" alt=""/>
-          </a>
-        </p>
-      </div>
-    </div>
-
   </div>
 </div>
 </section>
 
 </main>
 
-<footer class="content-wrapper">
+<footer class="content-wrapper" id="footer">
   <p>
-    BSHWork<br/>
-    copyright 2020 BSHWork
+    BSHWORK &copy; 2020 BSH
   </p>
+  <!--<?php include 'footer.php;?>-->
+
 </footer>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/typed.js"></script>
 </body>
 
 </html>

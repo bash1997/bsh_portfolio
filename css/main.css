@@ -603,9 +603,9 @@ button:nth-of-type(2) {
 
   /*End FOOTER*/
   /*HERO-AREA*/
-    .hero-area {
+    /* .hero-area {
       height: calc(100vh - 153.625px);
-    }
+    } */
   /*End HERO-AREA*/
   /*WORK*/
 

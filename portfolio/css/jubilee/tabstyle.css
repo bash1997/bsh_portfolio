@@ -1,0 +1,82 @@
+/***** HEADER ****/
+header h2 {
+  color: #9b9b9b;
+}
+
+.list {
+  display: inline-flex;
+  padding-top: .5em;
+}
+
+.list a {
+  font-size: 18px;
+  width: 33%;
+  padding: 0;
+}
+
+header h2 {
+  font-size: 2em;
+  padding: 20px 0 20px 25px;
+}
+
+/***** ABOUT SECTION *****/
+#about h2 {
+  padding-left:50px;
+}
+
+#about p {
+  font-size: 21px;
+  line-height:40px;
+  padding-left:50px;
+  padding-right:50px;
+}
+
+/***** WORK SECTION *****/
+#work img {
+  padding-bottom: 30px;
+  width: 14%;
+}
+
+#work .third-width:nth-of-type(2){
+  margin-top: 42px;
+}
+
+ #work h3 {
+  font-size: 24px;
+  line-height: 32px;
+  width: 29%;
+  margin: 1.05em 0 0;
+}
+
+#work p {
+  line-height: 30px;
+  padding: 0 50px;
+}
+
+/***** CONTACT SECTION *****/
+#contact .half-width {
+  width: 50%;
+}
+
+#socialicon p {
+  width: 11%;
+}
+
+@media only screen and (min-width: 768px) {
+  .third-width {
+    width: 50%;
+  }
+
+  #work .third-width {
+    margin: 0;
+  }
+
+  #work img {
+    width: 25%;
+  }
+
+  #work h3 {
+    width: 100%;
+    margin: 24px 0;
+  }
+}

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>BSH | Jubilee Austen</title>
+        <link rel="stylesheet" href="css/jubilee/normalize.css">
+        <link rel="stylesheet" href="css/jubilee/newmain.css">
+        <link rel="stylesheet" media="only screen and (min-width: 700px)" href="css/jubilee/tabstyle.css">
+        <link rel="stylesheet" media="only screen and (min-width: 1000px)" href="css/jubilee/deskstyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap"
+        rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap"
+        rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+        <meta name="desrciption" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="icon" href="img/bsh-icon.png" type="image/icon type">
+    </head>
+    <body>
+      <header>
+        <div class="full-width">
+          <div class="half-width">
+            <h1>Jubilee Austen</h1>
+            <button id="button">
+              Menu
+            </button>
+            <nav id="navMenu">
+              <div class="list">
+                <a href="#about">
+                  About
+                </a>
+                <a href="#work">
+                  Work
+                </a>
+                <a href="#contact">
+                   Contact
+                </a>
+            </div>
+          </nav>
+          <h2><span>Hi,</span> I'm a developer that loves clean
+            &amp; elegant code.</h2>
+        </div>
+      </div>
+    </header>
+      <main>
+        <section id="about">
+          <div class="full-width">
+            <h2>A little bit about me</h2>
+            <div class="half-width">
+              <p>I've made my home base in Providence, Rhode Island,
+                with my small growing family. My journey into tech
+                started with a degree in journalism. As I started
+                sharing my writing online, I was fascinated with how
+                 easliy I could get my vioce out there. I was hooked
+                 and wanted to learn how to build my own site to fit
+                 my own specific needs.</p>
+            </div>
+            <div class="half-width">
+              <p> That curiosity then opened a door that could never be
+                shut. When I learned how to build my first website, I
+                realized I found something that gave me the freedom &amp;
+                versatility I was looking for in my work. Now I've made
+                a full switch to front-end development, where I can use
+                my organization skills and eye for detail to write clean,
+                elegant code.</p>
+            </div>
+          </div>
+        </section>
+        <section id="work">
+          <div class="full-width">
+            <div class="third-width">
+              <img src="img/jubilee/html-icon.png" alt="HTML icon"/>
+              <h3>Hand-Coded HTML</h3>
+              <p>My focus is writing clean, well-formatted, semantic HTML5
+                 by hand to make sure that the content is easy to read,
+                 easy to collaborate, trouble-shoot and accessible.</p>
+            </div>
+            <div class="third-width">
+              <img src="img/jubilee/css-icon.png" alt="CSS icon"/>
+              <h3>Well-Organized CSS</h3>
+              <p>I pride myself on writing CSS that is easy to read and build
+                on. I focus on keeping my CSS lean and fast to load, and I
+                make it a habit to stay up to date on current best
+                practices.</p>
+            </div>
+            <div class="third-width">
+              <img src="img/jubilee/pencil-icon.png" alt="Pencil icon"/>
+              <h3>Ease Converting Designs into Code</h3>
+              <p>You can trust me to take a designer's PSD and quickly &
+                accurately convert it into a webpage that is pixel-perfect
+                match.</p>
+            </div>
+          </div>
+        </section>
+        <footer id="contact">
+          <div class="full-width">
+            <div class="half-width">
+              <img id="contact-img" src="img/jubilee/contact-img.png" alt="Contact image"/>
+            </div>
+            <div id="contact-info" class="half-width">
+              <h2>Like what you see?</h2>
+              <h3 id="email-header">Let's meet for a cup of coffee.</h3>
+              <a href="mailto:hi@jubileeausten.com">
+                <img id="envelope" src="img/jubilee/icon-envelope.png" alt="Envelope icon"/>
+                hi@julibeeausten.com
+              </a>
+              <h3 id="socialmedia-header"> Or, find me on the interwebs.</h3>
+              <div id="socialicon">
+                <p><a href="https://www.google.com">
+                  <img src="img/jubilee/instagram-icon.png" alt="Instagram icon"/>
+                </a></p>
+                <p><a href="https://www.google.com">
+                  <img src="img/jubilee/twitter-icon.png" alt="Twitter icon"/>
+                </a></p>
+                <p><a href="https://www.google.com">
+                  <img src="img/jubilee/tumblr-icon.png" alt="Tumblr icon"/>
+                </a></p>
+                <p><a href="https://www.google.com">
+                  <img src="img/jubilee/linked-in.png" alt="LinkedIn icon"/>
+                </a></p>
+                <p><a href="https://www.google.com">
+                  <img src="img/jubilee/git-hub.png" alt="GitHub icon"/>
+                </a></p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </main>
+      <script type="text/javascript"> //src="js/jubilee/nav.js"
+      var button = document.getElementById("button");
+      var navMenu = document.getElementById("navMenu");
+
+      var showNav = function () {
+        if (navMenu.style.display == "block") {
+          navMenu.style.display = "none";
+          button.style.marginBottom = "4em";
+        } else {
+            navMenu.style.display = "block";
+            button.style.marginBottom = "1em";
+        }
+      }
+      button.addEventListener("click", showNav);
+
+      // var button = document.getElementById("button");
+      // var colorBlue = function() {
+      //   if (button.style.color == "rgb(187,192,133)") {
+      //     button.style.color = "blue";
+      //   } else {
+      //     button.style.color = "red";
+      //   }
+      // }
+      // button.addEventListener("click", colorBlue);
+
+      </script>
+    </body>
+</html>

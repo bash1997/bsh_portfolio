@@ -1,0 +1,100 @@
+body {
+  background: #E8E8E8;
+}
+
+#vision-board {
+  background: url('../../img/vision/background.png');
+  width: 1000px;
+  margin: 50px auto;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  overflow: auto;
+}
+
+.block {
+  width: 33.333%;
+  box-sizing: border-box;
+  float: left;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.block h3 span {
+  background: #FFF44F;
+  padding: 5px;
+  margin: 0;
+}
+
+p, li {
+  font-size: 1.18em;
+  font-weight: 600;
+}
+
+.block p span {
+  font-size: 1.94em;
+  text-transform: none;
+  font-weight: bolder;
+}
+
+.block ul li {
+  list-style: none;
+}
+.large-block{
+  height: 470px;
+  padding-top: 75px;
+}
+
+.small-block {
+  height: 250px;
+  padding-top: 50px;
+}
+
+#grow, #freelance, #travel, #mind-body {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#eye {
+  color: #fff;
+}
+
+#eye h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.8em;
+  margin-bottom: 0
+}
+
+#eye p {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+#flower, #code, #activity, #dog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.light-bg {
+  background: #fff;
+}
+
+.dark-bg {
+  background: #3B3B3B;
+}

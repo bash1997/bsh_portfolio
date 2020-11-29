@@ -1,0 +1,108 @@
+/***** GRID *****/
+.half-width {
+  width: 50%;
+}
+
+.third-width {
+  width: 33%;
+  max-width: 400px;
+}
+/***** HEADER ****/
+header {
+  max-height: 800px;
+}
+
+header .half-width {
+  width: 100%;
+}
+
+header h1 {
+  padding: 65px 0 65px 25px;
+  font-size: 30px;
+  width: 49%;
+}
+
+#button {
+  display: none;
+}
+
+#navMenu {
+  padding: 65px 25px;
+  padding-left: 0;
+  margin-top: 2.625rem;
+  display: inline-block;
+  width: 45%;
+}
+
+header h2 {
+  max-width: 1000px;
+  font-size: 72px;
+  padding: 20px 0 20px 25px;
+}
+
+/***** ABOUT SECTION *****/
+#about .full-width {
+  padding: 80px 0;
+}
+
+#about h2 {
+  padding-left:50px;
+  width: 100%;
+}
+
+#about p {
+  text-align: left;
+}
+
+/***** WORK SECTION *****/
+#work .full-width {
+  padding-bottom: 5.625rem;
+}
+
+#work img {
+  width: 50%;
+  padding-bottom: 30px;
+}
+
+ #work h3 {
+  font-size: 24px;
+  line-height: 32px;
+  width: 61%;
+}
+
+/***** CONTACT SECTION *****/
+#contact {
+  text-align: left;
+}
+
+#contact .full-width {
+  padding: 110px 0;
+}
+
+#contact img#contact-img {
+  border: 12px solid #ffffff;
+  width: calc(100% - 100px);
+}
+
+#contact h2 {
+  font-size: 36px;
+  line-height: 44px;
+  width: 100%;
+}
+
+
+#contact #email-header {
+  font-size: 32px;
+  line-height: 44px;
+  width: 100%;
+}
+
+#contact #socialmedia-header {
+  font-size: 29px;
+  line-height: 44px;
+  width: 100%;
+}
+
+#contact a {
+  font-size: 28px;
+}

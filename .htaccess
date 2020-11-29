@@ -321,6 +321,21 @@ AddDefaultCharset utf-8
     RewriteRule ^ - [env=proto:http]
 
 </IfModule>
+# mod_rewrite starts here (Dani Krossing Youtube 5:50)
+
+RewriteEngine on
+
+# does not apply to existing directories, meaning that if the folder exists on the server then don't change anything and don't run the Rule!
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Check for file in directory with .html extension
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# Here we actually show the page that has the .html extension
+
+RewriteRule ^(.*)$ $1.html [NC,L]
 
 # ----------------------------------------------------------------------
 # | Forcing `https://`                                                 |
@@ -1215,4 +1230,3 @@ FileETag None
 #     RewriteCond %{REQUEST_FILENAME} !-f
 #     RewriteRule ^(.+)\.(\w+)\.(bmp|css|cur|gif|ico|jpe?g|m?js|png|svgz?|webp|webmanifest)$ $1.$3 [L]
 # </IfModule>
-

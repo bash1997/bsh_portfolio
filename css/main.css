@@ -638,6 +638,10 @@ section#about-social {
   min-width: unset;
 }
 
+section#about-social .icon:hover{
+  color: #29ABCF;
+}
+
 #aboutMe {
   background: #64C5E0;
   padding-left: 1.1111rem;
@@ -994,6 +998,11 @@ section#edu .gallery ul {
 
   #subHireMe .list div:last-of-type {
     border-right: none;
+  }
+
+  #subHireMe .list div:hover {
+    border-bottom: none;
+    margin-bottom: unset;
   }
 
   #subHireMe .list a {

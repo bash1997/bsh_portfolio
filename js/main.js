@@ -1,44 +1,41 @@
 $(function() {
-  var button = document.getElementById("menu");
-  var icon = button.children[0];
+  var hamMenu = document.getElementById("menu");
+  var hamIcon = hamMenu.children[0];
   var navMenu = document.getElementById("navMenu");
 
   var showNav = function () {
-    if (icon.name == "menu-sharp") {
+    if (hamIcon.className == "fas fa-bars fa-lg") {
       navMenu.style.display = "block";
-      icon.name = "close-sharp";
+      hamIcon.className = "fas fa-times fa-lg";
       $("#header").css("position", "absolute");
       $("#main").css("display", "none");
-    } else if (icon.name == "close-sharp") {
+    }
+
+    else if (hamIcon.className == "fas fa-times fa-lg") {
       navMenu.style.display = "none";
-      icon.name = "menu-sharp";
+      hamIcon.className = "fas fa-bars fa-lg";
       $("#header").css("position", "revert");
       $("#main").css("display", "block");
-
     }
   }
-  button.addEventListener("click", showNav);
+  hamMenu.addEventListener("click", showNav);
 
+  var hireMe = document.getElementById("hireMe");
+  var hireIcon = hireMe.children[1];
+  var subHireMe = document.getElementById("subHireMe");
 
+  var showSubNav = function() {
+    if (hireIcon.className == "fas fa-angle-down fa-lg") {
+      subHireMe.style.display = "block";
+      hireIcon.className = "fas fa-angle-left fa-lg";
+    }
 
+    else if (hireIcon.className == "fas fa-angle-left fa-lg") {
+      subHireMe.style.display = "none";
+      hireIcon.className = "fas fa-angle-down fa-lg";
+    }
+  }
 
-
-  var adjective = ["is a front-end developer.", "has a thrist for knowledge.", "lives in Washington, DC.", "loves to travel.", "is ambitious.", "is innovative.", "is creative.", "is resourceful."];
-  var colorAdjective = ["#c0a8ff", "#c0ffa8", "#ffc0a8", "#ffa8c0", "#c0d8ff", "#f0ffa8", "#c0d8f0", "#f0f0a8"];
-  // var random = Math.random();
-  // random *= adjective.length;
-  // var randomIndex = Math.floor(random);
-  // var randomAdjective = adjective[randomIndex];
-
-  var typed = new Typed('#js-header', {
-    startDelay: 150,
-    strings: adjective,
-    typeSpeed: 100,
-    backSpeed: 50,
-    smartBackspace: true, // Default value
-    shuffle: true,
-    loop: true
-  });
-
+  hireMe.addEventListener("click", showSubNav)
 
 })

@@ -1,10 +1,10 @@
 /*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
 
-/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/* main.css 2.0.0 | MIT License | https://github.com/h4bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
+ * Kroc Camen, and the h4BP dev community and team.
  */
 
 /* ==========================================================================
@@ -54,7 +54,7 @@ hr {
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
+ * https://github.com/h4bp/html5-boilerplate/issues/440
  */
 
 audio,
@@ -98,26 +98,26 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   @font-face {
-     font-family: simply-glam;
-     src: url("../font/simply-glamorous/simply-glamorous.ttf");
-   }
+@font-face {
+ font-family: simply-glam;
+ src: url("../font/simply-glamorous/simply-glamorous.ttf");
+}
 
-   @font-face {
-     font-family: biko-regular;
-     src: url("../font/biko/biko-regular.otf");
-   }
+@font-face {
+ font-family: biko-regular;
+ src: url("../font/biko/biko-regular.otf");
+}
 
-   @font-face {
-     font-family: biko-bold;
-     src: url("../font/biko/biko-bold.otf");
-     font-weight: 700;
-   }
+@font-face {
+ font-family: biko-bold;
+ src: url("../font/biko/biko-bold.otf");
+ font-weight: 700;
+}
 
-   @font-face {
-     font-family: biko-black;
-     src: url("../font/biko/biko-black.otf");
-   }
+@font-face {
+ font-family: biko-black;
+ src: url("../font/biko/biko-black.otf");
+}
 /*-------- MOBILE --------*/
 
 
@@ -138,16 +138,28 @@ h2 {
   text-shadow: 0 3px 3px #64c5e0;
 }
 
+#connect h2,
+#portfolio h2,
+#about h2 {
+  text-shadow: 0 3px 3px #032539;
+}
+
 h3 {
   font-size: 1.563em;
   font-family: biko-black;
 }
 
-h5 {
+h4 {
   font-size: 1.563em ;/*28.134*/
   margin: 0;
   font-family: biko-black;
   text-transform: capitalize;
+}
+
+h5 {
+  font-size: 1.25rem;/*22.5*/
+  margin: 0;
+  font-family: biko-regular;
 }
 
 h6 {
@@ -167,6 +179,11 @@ a {
   font-family: biko-regular;
 }
 
+li {
+  font-size: 1rem;
+  font-family: biko-regular;
+}
+
 .whiteButton:hover {
   background: #e07f64;
   color: #fff;
@@ -177,9 +194,38 @@ a {
   color: #e07f64;
 }
 
+/*---- gallery ----*/
+.gallery {
+  margin: 1.1111rem 1.1111rem 0;/*20*/
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.gallery img {
+  width: 100%;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.info {
+  width: 100%;
+  max-width: 300px;
+  text-transform: uppercase;
+  margin: 10px 0;
+  color: #64c5e0;
+}
+
+.info a {
+  color: inherit;
+  font-size: 1rem;
+}
+
 /*-------- HEADER --------*/
 body {
   width: 100%;
+  overflow-x: hidden;
 }
 
 header {
@@ -187,7 +233,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: baseline;
   flex-flow: wrap row;
   color: #29ABCF;
   background: #fff;
@@ -210,7 +256,11 @@ button#menu{
   max-height: 3.375em;
   max-width: 3.375em;
   padding-left: 0;
-  font-size: 1.953em;
+  font-size: 1.44em;
+}
+
+button#menu i.fa-lg {
+  vertical-align: 0;
 }
 
 nav {
@@ -224,7 +274,7 @@ nav {
   width: 100%;
   background: white;
   color: #64c5e0;
-  overflow: scroll;
+  overflow: auto;
   z-index: 1;
   left: 0;
   display: flex;
@@ -236,7 +286,7 @@ nav {
 .list a {
   text-decoration: none;
   display: block;
-  width: 40%;
+  width: 50%;
   height: 2.13336rem;
   min-width: 2.66667rem;/*48px*/
   min-height: 2.66667rem;/*48px*/
@@ -247,33 +297,73 @@ nav {
   color: inherit;
 }
 
-.list a.active {
+#navMenu .list a.active {
   border-right: solid .25rem #e07f64;
   border-left: solid .25rem #e07f64;
 }
 
-.list a:hover {
+#navMenu .list a:hover {
   border-bottom: solid .25rem #64c5e0;
   border-left: none;
   border-right: none;
 }
 
- a.hireMe {
+ #hireMe {
+  width: 50%;
+  height: 2.13336rem;
+  min-width: 2.66667rem;/*48px*/
+  min-height: 2.66667rem;/*48px*/
+  text-align: center;
+  position: relative;
   font-family: biko-bold;
   background: #e07f64;
-  color: #eff9fb;
+  color: #fff;
   padding: .125rem;
   border-radius: .5rem;
   line-height: 1.4;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1.5em;
+  margin: 1.5em;
+  outline: none;
+  border: none;
 }
 
-a.hireMe:hover {
+#hireMe:hover {
   background: #64c5e0;
   color: #fff;
+}
+
+#hireMe i {
+  padding-left: 15px;
+}
+
+#subHireMe {
+  display: none;
+}
+
+#subHireMe .list {
+  color: #29ABCF;
+}
+
+#subHireMe .list div {
+  width: 50%;
+  height: 2.13336rem;
+  min-width: 2.66667rem;/*48px*/
+  min-height: 2.66667rem;/*48px*/
+  height: 3rem;
+  overflow: hidden;
+  margin: .5rem 1.5rem 0;
+  position: relative;
+}
+
+#subHireMe .list div a{
+  padding: 0;
+}
+
+#subHireMe .list div:hover {
+  border-bottom: .25rem solid #29ABCF;
+  margin-bottom: .5rem;
 }
 
 /*-------- END DROP NAV --------*/
@@ -282,7 +372,51 @@ a.hireMe:hover {
 footer {
   background: #032539;
   color: #EFF9FB;
-  bottom: -1.66667rem;/*30*/
+}
+
+#footer.content-wrapper {
+  align-items: baseline;
+}
+
+#footer p {
+  width: 100%;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+#foot-social {
+  width: 100%;
+  max-width: 200px;
+}
+
+#foot-social .list {
+  background: none;
+  color: inherit;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+#foot-social .list div {
+  max-width: 48px;
+  min-height: 48px;
+}
+
+#foot-social .list a {
+  position: unset;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#foot-social .list i {
+  max-height: 40px;
+}
+
+#foot-social .list .fab {
+  line-height: 0;
+}
+
+#foot-social a:hover {
+  color: #e07f64;
 }
 /*-------- MAIN --------*/
 section {
@@ -294,7 +428,7 @@ section:last-of-type {
 margin-bottom: 0;
 }
 /*---- HERO-AREA ----*/
-.hero-area {
+#hero-area {
   padding: 4.5rem 0;/*30*/
   background: rgba(250, 153, 28, .5);
   display: flex;
@@ -302,8 +436,9 @@ margin-bottom: 0;
   align-items: center;
 }
 
-.hero-area h3 {
+#hero-area h3 {
   width: 93%;
+  min-height: 160px;
   margin: auto;
   color: #64c5e0;
   font-family: biko-regular;
@@ -313,7 +448,7 @@ margin-bottom: 0;
   position: relative;
 }
 
-span#static, span#js-header {
+span#typed, span#js-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -321,7 +456,7 @@ span#static, span#js-header {
   flex-flow: row wrap;
 }
 
-span#line1 {
+span#static {
   width: 100%;
   color: #eff9fb;
 }
@@ -330,24 +465,34 @@ span#line1 {
   background: #032539;
 }
 
-#hello p {
-  color: #64c5e0;
-  text-align: center;
-  margin-top: 0;
+#hello-wrapper {
+  margin: 0 0 1.66667rem ;
+  width: 100%;
 }
 
-#hello p strong,
-#hello p a {
-  font-weight: 900;
-  font-size: 1em;
+#hello-wrapper .gallery {
+  position: relative;
+}
+#hello-wrapper .gallery a img {
+  display: block;
+}
+
+#hello-wrapper .info {
+  text-align: center;
+}
+
+#hello-wrapper a {
+  text-decoration: none;
+  font-size: inherit;
+}
+
+#hello-wrapper .info a:hover {
   color: #e07f64;
 }
 
 .moreButton {
-  border: #e07f64 solid .125rem;
-  border-radius: .5rem;
   background: #fff;
-  box-shadow: 0px 0px 7px 0px #eff9fb;
+  box-shadow: 0px 0px 7px 2px #e07f64;
   padding: 1rem;
   text-decoration: none;
   color: #e07f64;
@@ -360,57 +505,16 @@ span#line1 {
 .moreButton:hover {
   background: #e07f64;
   color: #fff;
-  border-color: #fff;
 }
 
 /*---- WORK ----*/
-#connect h2,
-#portfolio h2,
-#about h2 {
-  text-shadow: 0 3px 3px #032539;
-}
-
-/*---- gallery ----*/
-
-#aboutMe .gallery:last-of-type {
-  padding-top: 0;
-}
-
-.gallery {
-  margin: 1.1111rem 1.1111rem 0;/*20*/
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.gallery a {
-  width: 100%;
-}
-
-.gallery img {
-  width: 100%;
-  max-height: 400px;
-  max-width: 400px;
-}
-
-.info {
-  width: 100%;
-  text-transform: uppercase;
-  margin: 10px 0;
-  color: #64c5e0;
-}
-
-.gallery:first-of-type .info {
+#portfolio .gallery:first-of-type .info {
   margin-top: 0;
 }
 
-.info a {
-  color: inherit;
-  font-size: 1rem;
+#portfolio .gallery:last-of-type .info {
+  margin-bottom: 0;
 }
-
-
 /*---- CONNECT ----*/
 #connect {
   width: 100%;
@@ -451,14 +555,20 @@ address #email {
   color: inherit;
 }
 
-address .orangeButton {
+.orangeButton {
   font-family: biko-bold;
   background: #e07f64;
   box-shadow: 0px 0px 14px 0px #eff9fb;
   color: inherit;
   text-decoration: none;
   padding: 1rem;
+}
+address .orangeButton {
   line-height: 4em;
+}
+
+#about .orangeButton {
+  box-shadow: 0px 0px 14px 0px #032539;
 }
 /*---- social ----*/
 .social {
@@ -472,36 +582,89 @@ address .orangeButton {
 
 .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
-  min-width: 2.66667em;/*48px*/
+  min-width: 5.75em;/*103.5px*/
+  width: 90%;
   font-size: 2.441em;
   padding: 0 .277778rem;/*5px*/
 }
 
-button.icon {
-  background: none;
-  outline: none;
-  border: none;
-}
 
-button.icon a {
-  color: #e07f64;
+.icon {
+  color: #032539;
   font-size: inherit;
+  text-align: center;
+  min-width: 48px;
+  min-height: 48px;
 }
 
-button.icon a:hover{
+.icon:hover{
   color: #fff;
 }
 
-button.icon:nth-of-type(2) {
-  padding: inherit;
-}
-
 #moreAbout {
-  margin: 1em 0 1.66667rem;
+  margin: 1.66667rem 0;
   width: 100%;
 }
+
+/*---- ABOUT ----*/
+#about section {
+  width: 100%;
+}
+
+#contentAbout {
+  margin-top: 1.66667rem;
+}
+
+section#about-social {
+  background: #EFF9FB;
+}
+
+#about img {
+  width: calc(100% - 2.222rem);
+  max-width: 325px;
+  padding-top: .83333rem;
+  }
+
+#about .social {
+  width: calc(100% - 2.222rem);
+  max-width: 325px;
+}
+
+#about .social-icons {
+  width: 100%;
+  padding: 0;
+  min-width: unset;
+}
+
+#aboutMe {
+  background: #64C5E0;
+  padding-left: 1.1111rem;
+  padding-right: 1.1111rem;
+}
+
+#aboutMe p {
+  margin-top: 0;
+  line-height: 1.6;
+}
+
+section#edu {
+  background: rgba(250, 153, 28, .5);
+}
+
+section#edu .gallery {
+  flex-flow: wrap row;
+}
+
+section#edu .gallery ul {
+  width: 100%;
+  padding-left: 1.1111rem;
+}
+
+/* #about #moreAbout {
+  margin-bottom: 0;
+} */
 
 /*-------- END MOBILE --------*/
 
@@ -595,13 +758,9 @@ button.icon:nth-of-type(2) {
    ========================================================================== */
 
 @media only screen and (orientation: landscape) and (max-height: 35em){
-  /*HEADER*/
+  /*HEADER landscape*/
   a#logo-name {
     width: 60%;
-  }
-
-  a.hireMe {
-    margin-top: 0;
   }
   /*End HEADER*/
   /*FOOTER*/
@@ -618,41 +777,54 @@ button.icon:nth-of-type(2) {
 }
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
-  /*HEADER*/
+  /*HEADER 35em 560*/
 
   /*End HEADER*/
-  /*FOOTER*/
+  /*FOOTER 35em 560*/
+  #footer.content-wrapper {
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #footer p {
+    width: auto;
+  }
+
+  #foot-social .list a {
+    padding: .625rem 0 0;
+    margin-top: .5rem;
+  }
 
   /*End FOOTER*/
-  /*HERO-AREA*/
-  .hero-area h3 {
+  /*HERO-AREA 35em 560*/
+  #hero-area h3 {
     text-align: left;
   }
 
-  span#static, span#js-header {
+  span#typed, span#js-header {
     justify-content: flex-start;
   }
 
-  span#line1 {
+  span#static {
     width: fit-content;
   }
   /*End HERO-AREA*/
-  /*WORK*/
-   #work
-   div.content-wrapper
-   div.content-wrapper {
-    justify-content: space-around;
-    align-items: flex-start;
-
+  /*WORK 35em 560| HELLO | PORTFOLIO*/
+  #hello-wrapper.content-wrapper,
+  #gallery.content-wrapper,
+  section#edu.content-wrapper {
+    justify-content: space-evenly;
   }
 
-  #aboutMe .gallery:first-of-type {
-    padding-top: 0;
+  #hello-wrapper div.gallery,
+  #gallery div.gallery {
+    margin: 1.6rem 0 0;
   }
 
   #portfolio .gallery,
-  #aboutMe .gallery {
-    width: calc((100% - 4.45rem)/2);
+  #hello .gallery {
+    width: calc((100% - 4.445rem)/2);
   }
 
   #portfolio .gallery .info p {
@@ -660,33 +832,60 @@ button.icon:nth-of-type(2) {
   }
 
   /*End WORK*/
-  /*CONNECT*/
+  /*CONNECT 35em 560| ABOUT*/
   #connect {
     padding-bottom: 1.66667rem;
   }
   .profile {
-      width: calc((100% - 40px)/2);
-      order: 0;
-      margin-left: 10px;
-    }
+    width: calc((100% - 40px)/2);
+    order: 0;
+    margin-left: 1.1111rem;
+  }
 
-    #contact {
-      width: calc((100% - 40px)/2);
-      margin-right: 10px;
-    }
+  #contact {
+    width: calc((100% - 40px)/2);
+    margin-right: 10px;
+  }
 
-    #moreAbout {
-      margin-bottom: 0;
-    }
+  #connect #moreAbout {
+    margin-bottom: 0;
+  }
 
-    #about .gallery img {
-      max-height: unset;
-    }
+  #about .gallery img {
+    max-height: unset;
+  }
 
+  section#edu #certs {
+    width: 37%;
+  }
+
+  section#edu #skills {
+    width: 55%;
+    margin: 1.1111rem 0 0;
+  }
+
+  section#edu .gallery ul {
+    max-height: 188px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+  }
+
+  section#edu #skills.gallery ul li {
+    width: 50%;
+  }
   /*End CONNECT*/
 }
 
+@media screen and (min-width: 650px) {
+  /* CONNECT 650 | ABOUT */
+  section#about-social img {
+    padding: .83333rem 58px 0;
+  }
+}
+
 @media screen and (min-width: 765px) {
+  /*font-size*/
   h2,
   .social-icons {
     font-size: 3.052rem;
@@ -696,8 +895,12 @@ button.icon:nth-of-type(2) {
     font-size: 2.441rem;
   }
 
-  h5 {
+  h4 {
     font-size: 1.953rem;
+  }
+
+  h5 {
+    font-size: 1.563rem
   }
 
   h6 {
@@ -712,31 +915,34 @@ button.icon:nth-of-type(2) {
     font-size: 1.25rem;
   }
 
+  li {
+    font-size: 1.25rem;
+  }
+
   .moreButton,
-  .info a,
+  #portfolio .info a,
   address #email{
     font-size: 1.25rem;
   }
 
-  .hero-area h3 {
+  #hero-area h3 {
     font-size: 1.953rem;
   }
-  /*HEADER*/
+  /*HEADER 765*/
   button#menu {
     display: none;
   }
 
   #navMenu {
     display: inline-block;
-    width: 45%;/*if #hireMe displayed, 50% width*/
+    width: 100%;/*if #hireMe displayed, 50% width*/
     position: relative;
     top: unset;
-    right: -146px;
     max-width: none;
   }
 
   .list {
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: nowrap;
     width: 100%;
     margin: unset;
@@ -744,83 +950,220 @@ button.icon:nth-of-type(2) {
     overflow: auto;
   }
 
-  .list a {
+  .list a,
+  #hireMe {
     margin: 0;
     padding: 0;
+    width: 25%;
   }
 
-  .list a.active {
+  #navMenu .list a.active {
     border-right: none;
     border-left: none;
     text-decoration: underline #e07f64;
   }
 
-  .list a:hover {
+  #navMenu .list a:hover {
     border-bottom: none;
     text-decoration: underline #64c5e0;
   }
 
-  a.hireMe {
-    display: none;
-    /* background: none;
-    display: block;
+  #hireMe {
+    font-family: 'biko-regular';
+    background: none;
     color: #e07f64;
-    border-radius: 0; */
+    border-radius: 0;
+    align-items: baseline;
+  }
+
+  #hireMe:hover {
+    background: none;
+    color: #e07f64;
+  }
+
+  #subHireMe {
+    padding-top: 1rem;
+  }
+
+  #subHireMe .list div {
+    margin: 0;
+    padding-top: 5px;
+    min-height: unset;
+    border-right: #d8d8d8 3px solid;
+  }
+
+  #subHireMe .list div:last-of-type {
+    border-right: none;
+  }
+
+  #subHireMe .list a {
+    max-width: 48px;
+    max-height: 48px;
   }
 
   /*End HEADER*/
-  /*CONNECT*/
-  #about .gallery img {
-    max-width: unset;
+  /*FOOTER 765*/
+  #foot-social {
+    margin: 8px 0 0;
+  }
+
+  #foot-social .list a {
+    padding: .625rem 0 0;
+    margin-top: 0;
+  }
+
+  /*End FOOTER*/
+  /*WORK 765 | HELLO | PORTFOLIO*/
+/*End Work*/
+  /*CONNECT 765 | ABOUT*/
+  #contentAbout.content-wrapper {
+    justify-content: space-between;
+  }
+
+  section#about-social, section#edu {
+    width: calc((100% - 4.445rem)/2);
+  }
+
+  section#about-social {
+    padding: 76px 1.1111rem;
+    order: 0;
+    max-height: 566px;
+  }
+
+  section#about-social img,
+  section#about-social .social {
+    width: 100%;
+  }
+
+  section#about-social img {
+    padding: .83333rem 0 0;
+  }
+
+  section#edu {
+    order: 1;
+    padding-right: 1.1111rem;
+    padding-left: 1.1111rem;
+    max-height: 656px;
+    margin-bottom: 1.66667rem;
+  }
+
+  section#edu #skills,
+  section#edu #certs {
+    width: 100%;
+    margin: 1.1111rem 0 0;
+  }
+
+  section#edu #skills.gallery ul li {
+    width: 55%;
+  }
+
+  section#edu #skills.gallery ul .c2 {
     width: 45%;
+  }
+
+  section#edu #moreAbout {
+    margin-bottom: 0;
+  }
+
+  #aboutMe {
+    order: 2;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    background: #64C5E0;
+  }
+
+  #aboutMe p {
+    margin: 1.1111rem;
   }
   /*End CONNECT*/
 }
 
 @media screen and (min-width: 50em) {
   body {
-    max-width: 52rem;
+    max-width: 65rem;
     margin: auto;
   }
-  /*HEADER*/
+  /*HEADER 800*/
   a#logo-name {
     width: auto;
   }
-
-  #navMenu {
-    right: -206px;
-  }
   /*End HEADER*/
-  /*FOOTER*/
+  /*FOOTER 800*/
 
   /*End FOOTER*/
-  /*HERO-AREA*/
-
+  /*HERO-AREA 800*/
+  #hero-area  h3 {
+      font-size: 2.441rem;
+    }
   /*End HERO-AREA*/
-  /*WORK*/
+  /*WORK 800 | HELLO | PORTFOLIO*/
+  #hello-wrapper .gallery,
   #portfolio .gallery {
-    width: calc((100% - 3.2rem)/3);
+    width: calc((100% - 4.445rem)/3);
     margin-left: 0;
     margin-right: 0;
   }
 
-  #portfolio .middle {
-    margin-left: 1.6rem;
-    margin-right: 1.6rem;
-  }
   /*End WORK*/
-  /*CONNECT*/
+  /*CONNECT 800 & ABOUT 800*/
+
+
+  #connect div.content-wrapper {
+    justify-content: space-evenly;
+  }
+
   #contact {
     width: calc((100% - 20px)/2);
   }
 
   .profile {
-    width: calc(100%/2.5);
-    min-width: 379.667px;
+    width: calc((100% - 3.3333rem)/2);
+    max-width: 379.667px;
+    margin-left: 1.66665rem;
+  }
+
+  section#about-social {
+    margin-bottom: 1.66667rem;
+    width: calc(45% - 3.78rem);
+    min-height: 568px;
   }
 
   #about .gallery img {
     width: 33%;
+  }
+
+  section#aboutMe {
+    width: calc(55% - 4.445rem);
+    order: 1;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    min-height: 659px;
+    margin-bottom: 1.66667rem;
+  }
+
+  section#aboutMe p {
+    padding: 1.1111rem;
+  }
+
+
+  section#edu.content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  section#edu #certs {
+    width: 27%;
+  }
+
+  section#edu #skills {
+    width: 45%;
+    margin: 1.1111rem 0 0;
+  }
+
+  section#edu #moreAbout {
+    width: 20%;
   }
 
   /*End CONNECT*/

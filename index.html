@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>BSH | Home</title>
   <link rel="icon" href="img/bsh-icon.png" type="image/icon type">
+  <link href="font/font-awesome/css/all.css" rel="stylesheet">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -25,15 +26,15 @@
 
   <!-- Add your site or application content here -->
   <header id="header">
-    <a id="logo-name" href="http://www.bshwork.me/">
+    <a id="logo-name" href="index.html">
       <img src="img\logo-name.png">
     </a>
       <button id="menu">
-        <ion-icon name="menu-sharp"></ion-icon>
+        <i class="fas fa-bars fa-lg"></i>
       </button>
         <nav id="navMenu">
           <div class="list">
-            <a class="active" href="http://www.bshwork.me/">
+            <a class="active" href="index.html">
               Home
             </a>
             <a href="portfolio/index.html">
@@ -42,19 +43,33 @@
             <a href="about/index.html">
               About
             </a>
-            <a class="hireMe" href="">
-              Hire Me!
-            </a>
-
+            <button id="hireMe">
+              <h5>Hire Me!</h5>
+              <i class="fas fa-angle-down fa-lg"></i>
+            </button>
+          </div>
+          <div id="subHireMe">
+            <div class="list">
+              <div class="content-wrapper">
+                <a href="mailto:hi.bria@bshwork.me">
+                  <i class="fas fa-envelope fa-lg"></i>
+                </a>
+              </div>
+              <div class="content-wrapper">
+                <a href="tel:2403302969">
+                  <i class="fas fa-phone-alt"></i>
+                </a>
+              </div>
+            </div>
           </div>
       </nav>
   </header>
 
 <main id="main">
-  <section class="hero-area">
+  <section id="hero-area">
     <h3>
-      <span id="static">
-        <span id="line1">Bria Saunders-Hall&nbsp;</span>
+      <span id="typed">
+        <span id="static">Bria Saunders-Hall&nbsp;</span>
         <span id="js-header"></span>
       </span>
     </h3>
@@ -64,9 +79,37 @@
     <div class="content-wrapper">
       <h2>Hello!</h2>
       <div class="content-wrapper">
-        <div class="gallery">
-          <p>And welcome to my portfolio! I am a <strong>Front-End Web Developer</strong>. I studied at Skillcrush, learning how to Break Into Tech. I hope to take this knowledge and become an asset in your business or company. My skill set ranges from web development to web design. I am always willing, and yearning, to learn something new and no request is too challenging.
-          </br>Please take a look at my <strong>portfolio</strong> and reach out, I would love to <a href="#connect">chat</a>!</p>
+        <div id="hello-wrapper" class="content-wrapper">
+          <div class="content-wrapper gallery">
+            <a href="portfolio/jubilee.html" target="_blank">
+              <img src="img/jubilee-austen.png" alt="Jubilee Austeen"/>
+            </a>
+            <div class="info">
+              <h6>
+                <a href="portfolio/jubilee.html" target="_blank">Jubilee Austeen</a>
+              </h6>
+            </div>
+          </div>
+          <div class="content-wrapper gallery">
+            <a href="portfolio/election-map.html" target="_blank">
+              <img src="img/us-election-map.png" alt="U.S. election map">
+            </a>
+            <div class="info">
+              <h6>
+                <a href="portfolio/election-map.html" target="_blank">US Election Map</a>
+              </h6>
+            </div>
+          </div>
+          <div class="content-wrapper gallery">
+            <a href="https://brisau6.dreamhosters.com/" target="_blank">
+              <img src="img/skill-starter-wp.png" alt="Skillcrush Starter WordPress Theme">
+            </a>
+            <div class="info">
+              <h6>
+                <a href="https://brisau6.dreamhosters.com/" target="_blank">Skillcrush Starter</a>
+              </h6>
+            </div>
+          </div>
         </div>
         <div class="content-wrapper">
           <a href="portfolio/index.html" class="moreButton whiteButton">
@@ -90,34 +133,27 @@
       <div id="contact" class="content-wrapper">
 
         <address class="contact-info">
-          <h5>let's meet</h5>
+          <h4>let's meet</h4>
           <p>
             Washington, DC<br/>
-            <a href="mailto:bash_1997@outlook.com" id="email">bash_1997@outlook.com</a><br/>
+            <a href="mailto:hi.bria@bshwork.me" id="email">hi.bria@bshwork.me</a><br/>
             2403302969<br/>
-            <a href="bsh-resume.pdf" class="orangeButton" download>
-              Resume</a>
+            <a href="bsh-resume.pdf" class="orangeButton" download>Resume</a>
           </p>
         </address>
 
       <div class="social">
-        <h5>social</h5>
+        <h4>social</h4>
         <div class="social-icons">
-          <button class="icon">
-            <a href="https://www.linkedin.com/in/bria-saunders-hall-0a3539109/" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </button>
-          <button class="icon">
-            <a href="https://dribbble.com/bash1997" target="_blank">
-              <ion-icon name="logo-dribbble"></ion-icon>
-            </a>
-          </button>
-          <button class="icon">
-            <a href="https://github.com/bash1997" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </button>
+          <a class="icon" href="https://www.linkedin.com/in/bria-saunders-hall-0a3539109/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a class="icon" href="https://dribbble.com/bash1997" target="_blank">
+            <i class="fab fa-dribbble-square"></i>
+          </a>
+          <a  class="icon" href="https://github.com/bash1997" target="_blank">
+            <i class="fab fa-github-square"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -133,19 +169,36 @@
 </main>
 
 <footer class="content-wrapper" id="footer">
-  <p>
-    BSHWORK &copy; 2020 BSH
-  </p>
-  <!--<?php include 'footer.php;?>-->
+  <p>created with <i class="fas fa-heart"></i> by BSH &copy; 2020</p>
+
+  <div id="foot-social">
+    <div class="list">
+      <div class="content-wrapper">
+        <a href="https://www.linkedin.com/in/bria-saunders-hall-0a3539109/" target="_blank">
+          <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+      </div>
+      <div class="content-wrapper">
+        <a href="https://dribbble.com/bash1997" target="_blank">
+          <i class="fab fa-dribbble-square fa-lg"></i>
+        </a>
+      </div>
+      <div class="content-wrapper">
+        <a href="https://github.com/bash1997" target="_blank">
+          <i class="fab fa-github-square fa-lg"></i>
+        </a>
+      </div>
+    </div>
+  </div>
 
 </footer>
-  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="js/typed.js"></script>
+  <script src="js/hero.js"></script>
 </body>
 
 </html>

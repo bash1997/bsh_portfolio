@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>BSH | Portfolio</title>
   <link rel="icon" href="img/bsh-icon.png" type="image/icon type">
+  <link href="../font/font-awesome/css/all.css" rel="stylesheet">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -25,29 +26,43 @@
 
   <!-- Add your site or application content here -->
   <header id="header">
-    <a id="logo-name" href="http://www.bshwork.me/">
+    <a id="logo-name" href="../index.html">
       <img src="img\logo-name.png">
     </a>
-      <button id="menu">
-        <ion-icon name="menu-sharp"></ion-icon>
-      </button>
-      <nav id="navMenu">
+    <button id="menu">
+      <i class="fas fa-bars fa-lg"></i>
+    </button>
+    <nav id="navMenu">
+      <div class="list">
+        <a href="../index.html">
+          Home
+        </a>
+        <a class="active" href="index.html">
+          Portfolio
+        </a>
+        <a href="../about/index.html">
+          About
+        </a>
+        <button id="hireMe">
+          <h5>Hire Me!</h5>
+          <i class="fas fa-angle-down fa-lg"></i>
+        </button>
+      </div>
+      <div id="subHireMe">
         <div class="list">
-          <a href="../index.html"><!--http://www.bshwork.me/-->
-            Home
-          </a>
-          <a class="active" href="index.html">
-            Portfolio
-          </a>
-          <a href="../about/index.html">
-            About
-          </a>
-          <a class="hireMe" href="">
-            Hire Me!
-          </a>
-
+          <div class="content-wrapper">
+            <a href="mailto:hi.bria@bshwork.me">
+              <i class="fas fa-envelope fa-lg"></i>
+            </a>
+          </div>
+          <div class="content-wrapper">
+            <a href="tel:2403302969">
+              <i class="fas fa-phone-alt"></i>
+            </a>
+          </div>
         </div>
-    </nav>
+      </div>
+  </nav>
   </header>
   <main id="main">
     <section id="portfolio">
@@ -65,7 +80,7 @@
               <a href="https://github.com/bash1997/jubilee-austen" target="_blank">View Code</a>
             </div>
           </div>
-          <div class="content-wrapper gallery middle">
+          <div class="content-wrapper gallery">
             <a href="rogue.html" target="_blank">
               <img src="img/rogue.png" alt="Rogue Pickings">
             </a>
@@ -95,7 +110,7 @@
               <a href="https://github.com/bash1997/recipe-card" target="_blank">View Code</a>
             </div>
           </div>
-          <div class="content-wrapper gallery middle">
+          <div class="content-wrapper gallery">
             <a href="lolcat.html" target="_blank">
               <img src="img/lolcat.png" alt="lol cat clock">
             </a>
@@ -125,7 +140,7 @@
               <a href="https://github.com/bash1997/us_election_map" target="_blank">View Code</a>
             </div>
           </div>
-          <div class="content-wrapper gallery middle">
+          <div class="content-wrapper gallery">
             <a href="tip-calculator.html" target="_blank">
               <img src="img/tip-calculator.png" alt="Js Tip Calculator">
             </a>
@@ -145,7 +160,7 @@
               <a href="https://github.com/bash1997/skillcrushstarter-wp" target="_blank">View Code</a>
             </div>
           </div>
-          <div class="content-wrapper gallery">
+          <!--<div class="content-wrapper gallery">
             <a href="" target="_blank">
               <img src="img/" alt="">
             </a>
@@ -154,7 +169,7 @@
               <p>Edited and updated client's existing Wordpress Site</p>
               <a href="" target="_blank">View Code</a>
             </div>
-          </div>
+          </div>-->
           <div class="content-wrapper gallery">
             <a href="" target="_blank">
               <img src="img/img-logo.png" alt="Vintage Dreaming Logo">
@@ -170,12 +185,29 @@
     </section>
   </main>
   <footer class="content-wrapper" id="footer">
-    <p>
-      BSHWORK &copy; 2020 BSH
-    </p>
+    <p>created with <i class="fas fa-heart"></i> by BSH &copy; 2020</p>
+
+    <div id="foot-social">
+      <div class="list">
+        <div class="content-wrapper">
+          <a href="https://www.linkedin.com/in/bria-saunders-hall-0a3539109/" target="_blank">
+            <i class="fab fa-linkedin fa-lg"></i>
+          </a>
+        </div>
+        <div class="content-wrapper">
+          <a href="https://dribbble.com/bash1997" target="_blank">
+            <i class="fab fa-dribbble-square fa-lg"></i>
+          </a>
+        </div>
+        <div class="content-wrapper">
+          <a href="https://github.com/bash1997" target="_blank">
+            <i class="fab fa-github-square fa-lg"></i>
+          </a>
+        </div>
+      </div>
+    </div>
 
   </footer>
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="../js/vendor/modernizr-3.7.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>

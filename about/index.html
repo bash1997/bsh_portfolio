@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>BSH | About</title>
   <link rel="icon" href="img/bsh-icon.png" type="image/icon type">
+  <link href="../font/font-awesome/css/all.css" rel="stylesheet">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -25,29 +26,43 @@
 
   <!-- Add your site or application content here -->
   <header id="header">
-    <a id="logo-name" href="http://www.bshwork.me/">
+    <a id="logo-name" href="../index.html">
       <img src="img\logo-name.png">
     </a>
-      <button id="menu">
-        <ion-icon name="menu-sharp"></ion-icon>
-      </button>
-      <nav id="navMenu">
+    <button id="menu">
+      <i class="fas fa-bars fa-lg"></i>
+    </button>
+    <nav id="navMenu">
+      <div class="list">
+        <a href="../index.html">
+          Home
+        </a>
+        <a href="../portfolio/index.html">
+          Portfolio
+        </a>
+        <a class="active" href="index.html">
+          About
+        </a>
+        <button id="hireMe">
+          <h5>Hire Me!</h5>
+          <i class="fas fa-angle-down fa-lg"></i>
+        </button>
+      </div>
+      <div id="subHireMe">
         <div class="list">
-          <a  href="../index.html"> <!--http://www.bshwork.me/-->
-            Home
-          </a>
-          <a href="../portfolio/index.html">
-            Portfolio
-          </a>
-          <a class="active" href="index.html">
-            About
-          </a>
-          <a class="hireMe" href="">
-            Hire Me!
-          </a>
-
+          <div class="content-wrapper">
+            <a href="mailto:hi.bria@bshwork.me">
+              <i class="fas fa-envelope fa-lg"></i>
+            </a>
+          </div>
+          <div class="content-wrapper">
+            <a href="tel:2403302969">
+              <i class="fas fa-phone-alt"></i>
+            </a>
+          </div>
         </div>
-    </nav>
+      </div>
+  </nav>
   </header>
   <main id="main">
     <section id="about">
@@ -55,32 +70,103 @@
         <h2>about me</h2>
 
         <div class="content-wrapper">
-          <div class="gallery">
-            <img src="img/profile-pic.png" alt="">
-          </div>
-          <div class="content-wrapper" id="aboutMe">
-            <div class="gallery">
-              <p>I fell in love with coding when I was eightteen, but I have been in love with technology my whole life. As long as I can remember, I have been sitting front of a laptop. So, when I wrote my first line of code, it was like taking a breathe of fresh air.
-              </p>
-            </div>
-            <div class="gallery">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus
-                vel facilisis.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+          <div id="contentAbout" class="content-wrapper">
+            <section id="about-social" class="content-wrapper">
+
+                <img src="img/profile-pic.png" alt="Bria A. Saunders-Hall">
+
+              <div class="social">
+                <div class="social-icons">
+                  <a class="icon" href="mailto:hi.bria@bshwork.me">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+
+                  <a class="icon" href="tel:2403302969">
+                    <i class="fas fa-phone-square-alt"></i>
+                  </a>
+
+                  <a class="icon" href="https://www.linkedin.com/in/bria-saunders-hall-0a3539109/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+
+                  <a class="icon" href="https://dribbble.com/bash1997" target="_blank">
+                    <i class="fab fa-dribbble-square"></i>
+                  </a>
+
+                  <a  class="icon" href="https://github.com/bash1997" target="_blank">
+                    <i class="fab fa-github-square"></i>
+                  </a>
+
+                </div><!--end of social-icons-->
+              </div><!--end of social-->
+            </section><!--end of about-social-->
+            <section id="aboutMe" class="content-wrapper">
+              <p>I am extremely motivated to constantly grow professionally. I am seeking a full-time position where I can utilize my enthusiasm for coding and engineering. Self starter with the ability to work well independently or in a team.  A firm grasp of mathematical problem-solving and the scientific process. Has experience editing and updating existing websites and dynamic web applications.</p>
+            </section><!--end of aboutMe-->
+
+            <section class="content-wrapper" id="edu">
+
+              <div id="certs" class="gallery">
+                <h6>Certficatons</h6>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>jQuery</li>
+                  <li>SQL</li>
+                  <li>Ethical Hacking</li>
+                </ul>
+              </div><!--end of Certficatons-->
+
+              <div id="skills" class="gallery">
+                <h6>Skills</h6>
+                <ul>
+                  <li>Mobile First</li>
+                  <li>GIT & Github</li>
+                  <li>WordPress</li>
+                  <li>UX/UI</li>
+                  <li>Wireframes</li>
+                  <li>Color Theory</li>
+                  <li class="c2">Typography</li>
+                  <li class="c2">PhotoShop</li>
+                  <li class="c2">Illustrator</li>
+                  <li class="c2">InDesign</li>
+                  <li class="c2">Adobe XD</li>
+                </ul>
+              </div><!--end of skills-->
+              <div id="moreAbout" class="content-wrapper">
+                <a href="bsh-resume.pdf" class="orangeButton" download>Resume</a>
+              </div><!--end of moreAbout-->
+          </section><!--end of edu-->
+        </div><!--end of contentAbout-->
+
+      </div><!--end of first content-wrapper-->
     </section>
   </main>
   <footer class="content-wrapper" id="footer">
-    <p>
-      BSHWORK &copy; 2020 BSH
-    </p>
+    <p>created with <i class="fas fa-heart"></i> by BSH &copy; 2020</p>
+
+    <div id="foot-social">
+      <div class="list">
+        <div class="content-wrapper">
+          <a href="https://www.linkedin.com/in/bria-saunders-hall-0a3539109/" target="_blank">
+            <i class="fab fa-linkedin fa-lg"></i>
+          </a>
+        </div>
+        <div class="content-wrapper">
+          <a href="https://dribbble.com/bash1997" target="_blank">
+            <i class="fab fa-dribbble-square fa-lg"></i>
+          </a>
+        </div>
+        <div class="content-wrapper">
+          <a href="https://github.com/bash1997" target="_blank">
+            <i class="fab fa-github-square fa-lg"></i>
+          </a>
+        </div>
+      </div>
+    </div>
 
   </footer>
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="js/vendor/modernizr-3.7.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>

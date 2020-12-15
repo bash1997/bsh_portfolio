@@ -550,9 +550,14 @@ address p {
   margin-bottom: 0;
 }
 
-address #email {
+address #email,
+address a {
   font-size: 1rem;
   color: inherit;
+}
+
+address span {
+  text-decoration: none;
 }
 
 .orangeButton {
@@ -662,7 +667,7 @@ section#edu .gallery {
 }
 
 section#edu .gallery ul {
-  width: 100%;
+  width: 85%;
   padding-left: 1.1111rem;
 }
 

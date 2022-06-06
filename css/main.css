@@ -874,7 +874,7 @@ section#edu .gallery ul {
   }
 
   section#edu .gallery ul {
-    max-height: 188px;
+    max-height: 200px;
     display: flex;
     justify-content: space-evenly;
     flex-flow: column wrap;
